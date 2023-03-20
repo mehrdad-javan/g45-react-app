@@ -19,6 +19,7 @@ import ComponentLifecycleDemo from './ex10-component-lifecycle/ComponentLifecycl
 import UseStateExample from './ex10-component-lifecycle/UseStateExample';
 import UseStateExample2 from './ex10-component-lifecycle/UseStateExample2';
 import UseEffectExample from './ex10-component-lifecycle/UseEffectExample';
+import HookFormDemo from './ex10-component-lifecycle/HookFormDemo';
 
 const greetingMessage = <div>Hello React!</div>;
 
@@ -34,4 +35,4 @@ console.log(">>>> Hello React!");
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const names = ["Mehrdad Javan", "Simon Elbrink", "Test Testsson"]; 
-root.render(<UseEffectExample />);
+root.render(<HookFormDemo />);
