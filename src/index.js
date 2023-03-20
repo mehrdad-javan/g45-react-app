@@ -15,6 +15,10 @@ import Car from './ex8-state/Car';
 import ProductList from './ex8-state/ProductList';
 import Counter from './ex9-events/Counter';
 import Person from './ex9-events/Person';
+import ComponentLifecycleDemo from './ex10-component-lifecycle/ComponentLifecycleDemo';
+import UseStateExample from './ex10-component-lifecycle/UseStateExample';
+import UseStateExample2 from './ex10-component-lifecycle/UseStateExample2';
+import UseEffectExample from './ex10-component-lifecycle/UseEffectExample';
 
 const greetingMessage = <div>Hello React!</div>;
 
@@ -30,4 +34,4 @@ console.log(">>>> Hello React!");
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const names = ["Mehrdad Javan", "Simon Elbrink", "Test Testsson"]; 
-root.render(<Person />);
+root.render(<UseEffectExample />);
