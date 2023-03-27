@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.css";
 import Skill from './hook-form-practice/Skill';
 import AxiosDemo from './ex12-axios/AxiosDemo';
+import RouterDemo from './ex13-router/RouterDemo';
 
 const greetingMessage = <div>Hello React!</div>;
 
@@ -20,4 +21,4 @@ console.log(">>>> Hello React!");
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const names = ["Mehrdad Javan", "Simon Elbrink", "Test Testsson"]; 
-root.render(<AxiosDemo />);
+root.render(<RouterDemo />);
