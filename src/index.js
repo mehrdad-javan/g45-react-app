@@ -1,24 +1,14 @@
 //import ReactDOM from 'react-dom';
-import ReactDOM from 'react-dom/client';
-
+import ReactDOM from "react-dom/client";
+import { store } from "./ex14-redux/store/configureStore";
 // import bootstrap css resource
 import "bootstrap/dist/css/bootstrap.css";
-import Skill from './hook-form-practice/Skill';
-import AxiosDemo from './ex12-axios/AxiosDemo';
-import RouterDemo from './ex13-router/RouterDemo';
+import Person from "./ex14-redux/components/Person";
+import { Provider } from "react-redux";
 
-const greetingMessage = <div>Hello React!</div>;
-
-const menu = <ul>
-        <li>Home</li>
-        <li>Login</li>
-        <li>Contact Us</li>
-    </ul>;
-
-console.log(">>>> Hello React!");
-
-//ReactDOM.render(menu,  document.getElementById('root')  );
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-const names = ["Mehrdad Javan", "Simon Elbrink", "Test Testsson"]; 
-root.render(<RouterDemo />);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <Provider store={store}>
+    <Person />
+  </Provider>
+);
